@@ -312,87 +312,38 @@ Trayectoria enfocada en BIM, coordinación y transformación digital en construc
 <div class="timeline">
 
 <div class="timeline-item">
-<div class="year">2026 | REGIONAL HIGH SPECIALTY NUCLEAR MEDICINE HOSPITAL</div>
-
+<div class="year">2026 Regional High Specialty Nuclear Medicine Hospital</div>
 <div class="content">
-
-<h3>INDEPENDENT | BIM Consultant / Digital Construction</h3>
-<br>
+<h3>BIM Consultant / Digital Construction</h3>
 <p>
 Developed and maintained the structural BIM model.
-<br>
 Coordinated structural information with architectural and MEP disciplines.
-<br>
 Reviewed model quality and information consistency throughout project development.
 </p>
 </div>
 </div>
-<br>
 
 <div class="timeline-item">
-<div class="year">2024-2025 | ESTADIO AZTECA </div>
+<div class="year">2025</div>
 <div class="content">
-<h3>TDC | Consulting Architect, BIM Modeler & Coordinator</h3>
+<h3>BIM Modeler & Coordinator</h3>
 <p>
-<br>
-Coordination of multiple disciplines and contractors to ensure the proper execution of
-Project 2 (Sierra Porch) and Project 6 (Central kitchen) at Estadio Azteca, in collaboration
-with Populous and VFO.
-</p>
-</div>
-</div>
-<br>
-
-<div class="timeline-item">
-<div class="year">2022-2024 | MULTIPLE PROJECTS </div>
-<div class="content">
-<h3>GLOBAL INFRA | Project Leader</h3>
-<p>
-<br>
-Led BIM coordination and multidisciplinary model development for airport, healthcare and
-mixed-use developments, collaborating with BOVIS and INPROS on the expansion of
-Guadalajara International Airport (GAP).
-<br>
-BIM modeling for the bidding-stage project Anima Village, designed by Architect Sordo
-Madaleno.
-<br>
-BIM modeling for IMSS Rural Hospital Number 69.
-<br>
-BIM modeling and coordination for the National Institute of Cardiology in Mexico City.
-Co-developed an innovative children's hospital project registered with INDAUTOR
-(Registration No. 03-2023-102008245500-01).
-<br>
-Co-developed the company's BIM Execution Plan (BEP).
-
-</p>
-</div>
-</div>
-<br>
-
-</div>
-
-<div class="timeline-item">
-<div class="year">2020-2022 | AIFA / TREN MAYA </div>
-<div class="content">
-<h3>SEDENA | Project BIM Leader</h3>
-<p>
-<br>
-Coordinated BIM (Architectural, Structural and MEP) development for the
-Regional Military Hospital (Front 21) 49,050 m2, 220 beds.
-<br>
-Support work for Front 6 – Parking Structure and Intermodal Terminal at Felipe
-Ángeles International Airport (AIFA).
-<br>
-Co-coordination of Section 7 execution studies for the Tren Maya project,
-Leading a team of 6 professionals.
-<br>
-Supported LiDAR data acquisition and Scan-to-BIM workflows for railway
-stations along the assigned section
+Modelado arquitectónico, coordinación de interferencias (clash detection) y apoyo en proyectos de infraestructura digital.
 </p>
 </div>
 </div>
 
-<!-- ========================================================= -->
+<div class="timeline-item">
+<div class="year">2024</div>
+<div class="content">
+<h3>Scan to BIM / Modelado Digital</h3>
+<p>
+Procesamiento de nubes de puntos y generación de modelos BIM para edificaciones existentes.
+</p>
+</div>
+</div>
+
+</div>
 
 </section>
 <section id="projects">
@@ -450,36 +401,7 @@ function renderProjects(){
   });
 }
 
-function renderProjects(){
-  const c = document.getElementById("projectsContainer");
-  c.innerHTML = "";
-
-  projects.forEach(p=>{
-    const div = document.createElement("div");
-
-    div.style.padding = "14px";
-    div.style.marginBottom = "10px";
-    div.style.background = "#0F1C33";
-    div.style.border = "1px solid rgba(255,255,255,0.08)";
-    div.style.borderRadius = "10px";
-
-    div.innerHTML = `
-      <img src="${p.img}" style="
-        width:100%;
-        height:180px;
-        object-fit:cover;
-        border-radius:8px;
-        margin-bottom:10px;
-      ">
-
-      <div style="font-weight:600;">
-        ${lang === "es" ? p.es : p.en}
-      </div>
-    `;
-
-    c.appendChild(div);
-  });
-}
+renderProjects();
 
 /* =========================================================
    PARTE 4 — UX PRO (ANIMACIONES + EXPERIENCIA PREMIUM)
